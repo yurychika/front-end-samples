@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<script type='text/javascript'>
+	function btnClick(argument){
+		alert('on mouse down event');
+	}
+
+	function divTouchStart(){
+		alert('in div touch start event');
+	}
+
+	</script>
+	<style>
+		#container{
+			height: 300px;
+			width: 200px;
+			background-color: red;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div id='container' onclick='btnClick();' ontouchstart='divTouchTtart()'>test button</div>
+	<script type='text/javascript'>
+		// document.getElementById('container').addEventListener("touchstart", divTouchStart, false);
+
+	</script>
+</body>
+</html>
